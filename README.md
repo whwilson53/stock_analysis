@@ -5,9 +5,17 @@ Project manager has requested optimizations to the module controlling the stock 
 ## Results
 The refactored code clocks in at around a tenth of second to complete. This is an improvement to the vicinity of half a second that the original code took to complete and sets up the analysis to handle larger volumes of data more efficiently if source dataset was to scale up. 
 
-![before Re-factoring](legacy_2017.png)
+BEFORE
 
-![before Re-factoring](legacy_2018.png)
+![before Re-factoring](legacy_2017.PNG)
+
+![before Re-factoring](legacy_2018.PNG)
+
+AFTER
+
+![refactored_2017](VBA_Challenge_2017.png)
+
+![refactored_2018](VBA_Challenge_2018.png)
 
 ## Summary
  1. The advantage to re-factoring code is that the structure or pattern of the code often comes out cleaner, is more readable, and can be positioned to handle changes to the source data if the schema or volume of data was the change there. This is in addition to any immediate run time advantages. Disadvantages can include introducing competing persepctives on re-factoring - one person's optimization may not be another's, and may not account for patternings that are present elsewhere in other pockets of the project. Additionally while run-time can be saved, the time it takes to refactor will have to borne by some party and it is not always known up front what that time commitment will be.
